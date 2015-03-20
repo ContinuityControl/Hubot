@@ -3,7 +3,7 @@
 
 module.exports = (robot) ->
 
-  // From http://alexplorer.net/music/oblique2.html
+  # From http://alexplorer.net/music/oblique2.html
   obliques = [
     "(Organic) machinery.",
     "A line has two sides.",
