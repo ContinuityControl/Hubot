@@ -122,22 +122,22 @@ module.exports = (robot) ->
         imageID: 4240352
       }
       {
-        regex: /(memegen)?(.*)(NOT IMPRESSED*)/i,
+        regex: /(memegen )?(.*)(NOT IMPRESSED*)/i,
         generatorID: 1420809,
         imageID: 5883168
       },
       {
-        regex: /(memegen)?(PREPARE YOURSELF) (.*)/i,
+        regex: /(memegen )?(PREPARE YOURSELF) (.*)/i,
         generatorID: 414926,
         imageID: 2295701
       },
       {
-        regex: /(memegen)?(WHAT IF I TOLD YOU) (.*)/i,
+        regex: /(memegen )?(WHAT IF I TOLD YOU) (.*)/i,
         generatorID: 1118843,
         imageID: 4796874
       },
       {
-        regex: /(memegen)?(.*) (BETTER DRINK MY OWN PISS)/i,
+        regex: /(memegen )?(.*) (BETTER DRINK MY OWN PISS)/i,
         generatorID: 92,
         imageID: 89714
       }
