@@ -6,6 +6,7 @@
   "description": "The Continuity Tiger Bot",
   "dependencies": {
     "hubot": "^2.11.4",
+    "hubot-ambush": "0.0.3",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.1.4",
     "hubot-google-translate": "^0.1.0",
@@ -19,7 +20,7 @@
     "hubot-shipit": "^0.1.2",
     "hubot-slack": "^3.3.0",
     "hubot-youtube": "^0.1.2",
-    "underscore" : "*"
+    "underscore": "*"
   },
   "engines": {
     "node": "0.10.x"
