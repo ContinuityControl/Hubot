@@ -9,6 +9,6 @@ module.exports = (robot) ->
 
   robot.respond /(pick|choose) one: (.*)$/i, (msg) ->
     choiceText = msg.match[2]
-    choices = choiceText.split(",")
+    choices = choiceText.split(/,|or/)
     choice = msg.random choices
     msg.reply choice
