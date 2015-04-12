@@ -7,8 +7,8 @@
 
 module.exports = (robot) ->
 
-  robot.respond /pick one: (.*)$/i, (msg) ->
-    choiceText = msg.match[1]
+  robot.respond /(pick|choose) one: (.*)$/i, (msg) ->
+    choiceText = msg.match[2]
     choices = choiceText.split(",")
     choice = msg.random choices
     msg.reply choice
