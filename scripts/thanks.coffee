@@ -6,28 +6,41 @@ pick_one = (array) ->
   i = Math.floor(Math.random() * array.length)
   array[i]
 
-phrases = [
-  "You're welcome",
-  "No problem",
-  "No prob",
-  "np",
-  "Sure thing",
-  "Anytime",
-  "Anything for you",
-  "Don't worry about it"
-]
+phrase = () ->
+  pick_one([
+    "You're welcome",
+    "No problem",
+    "No prob",
+    "np",
+    "Sure thing",
+    "Anytime, sweetie",
+    "Anytime",
+    "Anything for you",
+    "De nada, amigo",
+    "Don't worry about it"])
 
-punc = [
-  "", "!", ".", "!!"
-]
+punc = () ->
+  pick_one(["", "!", ".", "!!"])
 
-emoji = ["", "", "", ":smile:", ":+1:", ":ok_hand:", ":punch:",
-  ":bowtie:", ":smiley:", ":heart:", ":trollface:", ":heartbeat:",
-  ":sparkles:", ":star:", ":star2:", ":smirk:", ":grinning:",
-  ":smiley_cat:"]
+emoji = () ->
+  pick_one(["", "", "", ":smile:", ":+1:", ":ok_hand:", ":punch:",
+    ":bowtie:", ":smiley:", ":heart:", ":trollface:", ":heartbeat:",
+    ":sparkles:", ":star:", ":star2:", ":smirk:", ":grinning:",
+    ":smiley_cat:", ":sunflower:", ":tulip:", ":hibiscus:", ":cherry_blossom:"])
+
+image = () ->
+  "https://github.com/ContinuityControl/Hubot/blob/master/imgs/" +
+  pick_one([
+    "belly-rub.png",
+    "dancing.gif",
+    "hug.png",
+    "youre-welcome.gif",
+    "youre-welcome.png"])
 
 youre_welcome = () ->
-  [pick_one(phrases), pick_one(punc), " ", pick_one(emoji)].join('')
+  pick_one([
+    image(),
+    [phrase(), punc(), " ", emoji()].join('')])
 
 module.exports = (robot) ->
   robot.hear /(thx|thanks|thank you),?\s+hobbes/i, (msg) ->
@@ -35,8 +48,3 @@ module.exports = (robot) ->
 
   robot.respond /(thx|thanks|thank you)/i, (msg) ->
     msg.send youre_welcome()
-
-
-
-
-
