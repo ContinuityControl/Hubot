@@ -29,7 +29,7 @@ emoji = () ->
     ":smiley_cat:", ":sunflower:", ":tulip:", ":hibiscus:", ":cherry_blossom:"])
 
 image = () ->
-  "https://github.com/ContinuityControl/Hubot/blob/master/imgs/" + pick_one([
+  "https://raw.githubusercontent.com/ContinuityControl/Hubot/master/imgs/" + pick_one([
     "belly-rub.png",
     "dancing.gif",
     "hug.png",
