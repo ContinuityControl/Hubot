@@ -26,7 +26,8 @@ emoji = () ->
   pick_one(["", "", "", ":smile:", ":+1:", ":ok_hand:", ":punch:",
     ":bowtie:", ":smiley:", ":heart:", ":trollface:", ":heartbeat:",
     ":sparkles:", ":star:", ":star2:", ":smirk:", ":grinning:",
-    ":smiley_cat:", ":sunflower:", ":tulip:", ":hibiscus:", ":cherry_blossom:"])
+    ":smiley_cat:", ":sunflower:", ":tiger:", ":tulip:", ":paw_prints:",
+    ":hibiscus:", ":cherry_blossom:"])
 
 image = () ->
   "https://raw.githubusercontent.com/ContinuityControl/Hubot/master/imgs/" + pick_one([
@@ -42,8 +43,8 @@ youre_welcome = () ->
     [phrase(), punc(), " ", emoji()].join('')])
 
 module.exports = (robot) ->
-  robot.hear /(thx|thanks|thank you),?\s+hobbes/i, (msg) ->
+  robot.hear /(thx|tnx|thanks|thank you),?\s+hobbes/i, (msg) ->
     msg.send youre_welcome()
 
-  robot.respond /(thx|thanks|thank you)/i, (msg) ->
+  robot.respond /(thx|tnx|thanks|thank you)/i, (msg) ->
     msg.send youre_welcome()
