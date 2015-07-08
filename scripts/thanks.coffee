@@ -26,7 +26,7 @@ emoji = () ->
   pick_one(["", "", "", ":smile:", ":+1:", ":ok_hand:", ":punch:",
     ":bowtie:", ":smiley:", ":heart:", ":trollface:", ":heartbeat:",
     ":sparkles:", ":star:", ":star2:", ":smirk:", ":grinning:",
-    ":smiley_cat:", ":sunflower:", ":tiger:", ":tulip:", ":paw_prints:",
+    ":smiley_cat:", ":sunflower:", ":tiger:", ":taco:", ":tulip:", ":paw_prints:",
     ":hibiscus:", ":cherry_blossom:"])
 
 image = () ->
