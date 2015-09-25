@@ -5,6 +5,7 @@
   "author": "Tom Reznick <treznick@continuity.net>",
   "description": "The Continuity Tiger Bot",
   "dependencies": {
+    "chrono-node": "^1.0.8",
     "hubot": "^2.11.4",
     "hubot-ambush": "0.0.3",
     "hubot-diagnostics": "0.0.1",
@@ -21,6 +22,8 @@
     "hubot-shipit": "^0.1.2",
     "hubot-slack": "^3.3.0",
     "hubot-youtube": "^0.1.2",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6",
     "underscore": "*"
   },
   "engines": {
