@@ -32,9 +32,9 @@ emoji = () ->
 image = () ->
   "https://raw.githubusercontent.com/ContinuityControl/Hubot/master/imgs/" + pick_one([
     "belly-rub.png",
-    "dancing.gif",
+    "dancing.png",
+    "hats-off.png",
     "hug.png",
-    "youre-welcome.gif",
     "youre-welcome.png"])
 
 youre_welcome = () ->
