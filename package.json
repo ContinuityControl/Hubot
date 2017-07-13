@@ -28,6 +28,6 @@
     "underscore": "*"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "> 8.1.4"
   }
 }
