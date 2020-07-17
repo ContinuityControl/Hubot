@@ -23,7 +23,7 @@
     "hubot-slack": "^4.3.4",
     "hubot-standup-alarm": "^0.1.0",
     "hubot-youtube": "^1.0.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "moment": "^2.10.6",
     "underscore": "*"
   },
