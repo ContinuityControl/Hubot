@@ -5,7 +5,7 @@
   "author": "Tom Reznick <treznick@continuity.net>",
   "description": "The Continuity Tiger Bot",
   "dependencies": {
-    "chrono-node": "^1.0.8",
+    "chrono-node": "^2.2.4",
     "hubot": "^3.3.2",
     "hubot-ambush": "0.0.3",
     "hubot-diagnostics": "^1.0.0",
